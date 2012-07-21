@@ -1,5 +1,13 @@
 #include	"load_combination.h"
 
+/**
+ ** Verify that the buffer is only made of numbers
+ ** and fill the combination with them
+ **
+ ** @param buffer the buffer where is stored the password file
+ ** @param combination the combination tab to fill
+ ** @return 1 on success, 0 on failure
+ */
 static int	check_password(char *buffer, int *combination)
 {
   int		i;
@@ -16,7 +24,12 @@ static int	check_password(char *buffer, int *combination)
   return (1);
 }
 
-int	*load_combination()
+/**
+ ** Load the combination from the password file.
+ **
+ ** @return a pointer to the combination tab on success, NULL on failure
+ */
+int	*load_combination(void)
 {
   int	*combination;
   char	buffer[9];

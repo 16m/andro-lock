@@ -9,6 +9,6 @@
 # include	<sys/types.h>
 # include	<unistd.h>
 
-int		*load_combination();
+int		*load_combination(void);
 
 #endif		/* !LOAD_COMBINATION_H_ */
